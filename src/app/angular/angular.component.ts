@@ -15,6 +15,6 @@ export class AngularComponent implements OnInit {
   }
 
   add_todo() {
-
+    console.log('click');
   }
 }
