@@ -6,8 +6,9 @@ import { IndexComponent } from './index/index.component';
 import { HomeComponent } from './home/home.component';
 import { JqueryComponent } from './jquery/jquery.component';
 import {AppRoutingModule} from "./app-routing.module";
-import {MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule} from "@angular/material";
+import {MatButtonModule, MatCardModule, MatIconModule, MatMenuModule, MatToolbarModule} from "@angular/material";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {FlexLayoutModule} from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -24,6 +25,8 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
+    MatCardModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
