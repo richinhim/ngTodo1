@@ -10,4 +10,6 @@ let sum = 0;
 
 array4.forEach(item => sum += item);
 
+sum = array4.reduce(prev,curr => prev + curr);
+
 console.log(sum);
