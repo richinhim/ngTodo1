@@ -14,8 +14,8 @@ import {AngularComponent} from "./angular/angular.component";
       {path: 'angular', component: AngularComponent},
     ]
     },
-// 참고: 향후 관리자 생성 모듈
-// { path: 'admin', loadChildren: 'app/admin/admin.module#AdminModule'}
+// 참고: 향후 관리자 생성 모듈 - lazy 로딩 되는 방식이다. loadChildren lazy loading
+{ path: 'admin', loadChildren: 'app/admin/admin.module#AdminModule'}
   ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
