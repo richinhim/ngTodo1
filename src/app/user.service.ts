@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {environment} from "../environments/environment";
-import {TodoVO} from "./angular/domain/todo.vo";
+import {TodoVO} from "./domain/todo.vo";
 
 @Injectable()
 export class UserService {

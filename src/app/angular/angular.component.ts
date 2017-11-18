@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import {TodoVO} from "./domain/todo.vo";
+import {TodoVO} from "../domain/todo.vo";
 import {UserService} from "../user.service";
 import {animate, state, style, transition, trigger} from "@angular/animations";
-import {ResultVO} from "./domain/result.vo";
+import {ResultVO} from "../domain/result.vo";
 
 @Component({
   selector: 'app-angular',
