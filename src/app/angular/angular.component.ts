@@ -84,7 +84,6 @@ export class AngularComponent implements OnInit {
          item.updated = data.updated;
          item.isEdited = data.isEdited;
     });
-    // item.isEdited = false;
   }
 
   restore(item: TodoVO) {
