@@ -3,5 +3,5 @@ export class TodoVO {
   isFinished: boolean;
   todo: string;
   created: string;
-  updaed: string;
+  updated: string;
 }
