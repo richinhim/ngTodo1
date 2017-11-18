@@ -22,4 +22,12 @@ export class UserService {
   addTodo(todo: TodoVO) {
     return this.http.post(this.SERVER + '/api/todo', todo, {headers: this.headers}).toPromise();
   }
+
+  modifyTodo(todo: TodoVO) {
+    return this.http.put(this.SERVER + '/api/todo', todo, {headers: this.headers}).toPromise();
+  }
+  // : /api/todo?todo_id=1
+  removeTodo(todo_id: number) {
+    return this.http.delete(this.SERVER + `/api/todo?todo_id=${todo_id}`, {headers: this.headers}).toPromise();
+  }
 }
