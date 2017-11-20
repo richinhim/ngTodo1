@@ -12,8 +12,9 @@ import {NewsVO} from "../../domain/news.vo";
 })
 export class NewsComponent implements OnInit {
 
-  newsList: Array<NewsVO>;
+  newsList = new Array<NewsVO>();
   // page = new PageVO(0, 1);
+  page = new PageVO(0, 5);
 
   constructor(private  adminService: AdminService) { }
 
@@ -24,10 +25,10 @@ export class NewsComponent implements OnInit {
   findNews() {
     const page = {start_index: 0, page_size: 5};
     this.adminService.findNews(page)
-      .subscribe((data: ResultVO) => {
-        console.log(data);
-        // this.newsList =   data;
-
+      .subscribe((result: ResultVO) => {
+        console.log(result);
+        this.newsList = result.data;
+        this.page.totalCount = result.total;
       });
 
   }
