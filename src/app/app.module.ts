@@ -19,6 +19,10 @@ import {HttpClientModule} from "@angular/common/http";
 import { HighlightDirective } from './highlight.directive';
 import { MydatePipe } from './mydate.pipe';
 
+import {ViewComponent} from "./admin/news/view/view.componen";
+import { WriteComponent } from './admin/news/write/write.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +31,9 @@ import { MydatePipe } from './mydate.pipe';
     JqueryComponent,
     AngularComponent,
     HighlightDirective,
-    MydatePipe
+    MydatePipe,
+    ViewComponent,
+    WriteComponent
   ],
   imports: [
     BrowserModule,
