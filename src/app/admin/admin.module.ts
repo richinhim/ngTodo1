@@ -6,7 +6,7 @@ import { NewsComponent } from './news/news.component';
 import {AdminRoutingModule} from "./admin.routing.module";
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {MatToolbarModule} from "@angular/material/toolbar";
-import {MatButtonModule, MatCardModule} from "@angular/material";
+import {MatButtonModule, MatCardModule, MatPaginatorModule} from "@angular/material";
 import {AdminService} from "./admin.service";
 
 @NgModule({
@@ -16,7 +16,8 @@ import {AdminService} from "./admin.service";
     MatToolbarModule,
     MatCardModule,
     MatButtonModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatPaginatorModule
   ],
   declarations: [AdminComponent, HomeComponent, NewsComponent],
   providers: [AdminService]

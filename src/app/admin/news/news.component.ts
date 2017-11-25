@@ -25,7 +25,7 @@ export class NewsComponent implements OnInit {
   findNews() {
     const page = {start_index: 0, page_size: 5};
     this.adminService.findNews(page)
-      .subscribe((result: ResultVO) => {
+      .subscribe((result: ResultVO) => { // result=> response 객체의 body다.
         console.log(result);
         this.newsList = result.data;
         this.page.totalCount = result.total;
